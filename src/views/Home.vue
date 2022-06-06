@@ -4,6 +4,7 @@
     <counters />
     <buttons />
     <inputs />
+    <Explaination />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import counters from "../components/Counters.vue";
 import buttons from "../components/Buttons.vue";
 import inputs from "../components/Input.vue";
+import Explaination from '../components/Explaination-text.vue'
 
 export default {
   name: "Home",
@@ -18,6 +20,7 @@ export default {
     counters,
     buttons,
     inputs,
+    Explaination
   },
 };
 </script>
