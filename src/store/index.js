@@ -5,6 +5,7 @@ export default createStore({
   // State is where we store data
   state: {
     counter: 0,
+    color: 'blue',
   },
   // Mutations are methods that CAN change data in the state = need to COMMIT mutations, CAN'T be async
   mutations: {
@@ -13,6 +14,9 @@ export default createStore({
     },
     decreaseCounter(state, number) {
       state.counter -= number;
+    },
+    changeColor(state, payload) {
+      state.color = payload;
     }
   },
   // Actions are methods that CAN'T change data in the state = need to DISPATCH actions, CAN be asyc
