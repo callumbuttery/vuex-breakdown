@@ -34,6 +34,9 @@ export default createStore({
   },
   // Getters allow us to get data from our state, can change or filter data
   getters: {
+    counterSquared(state) {
+      return state.counter * state.counter;
+    }
 
   },
   modules: {
